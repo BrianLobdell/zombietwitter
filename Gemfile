@@ -30,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 #Bootstrap gem allows for front end framework
 gem "bootstrap-sass", "~> 3.0.3.0"
 
-gem "bcrypt-ruby", "~> 3.1.2"
+gem 'bcrypt-ruby', :require => 'bcrypt'
 
 
 group :doc do

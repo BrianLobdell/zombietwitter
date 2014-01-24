@@ -1,9 +1,12 @@
 Zombietwitter::Application.routes.draw do
   
+  get "log_in" => "sessions#new"
+  get "log_out" => "sessions#destroy"
   root "pages#home"
   get "about" => "pages#about"
   get "sign_up" => "users#new"
   resources :users
+  resources :sessions
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
