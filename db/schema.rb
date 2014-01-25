@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20140124190417) do
     t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "user"
   end
 
   create_table "users", force: true do |t|
