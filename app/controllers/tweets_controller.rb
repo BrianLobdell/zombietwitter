@@ -4,7 +4,11 @@ class TweetsController < ApplicationController
   # GET /tweets
   # GET /tweets.json
   def index
+<<<<<<< HEAD
     @tweets = Tweet.all.order("created_at DESC").limit(5)
+=======
+    @tweets = Tweet.all
+>>>>>>> ba10669983245f8554675fa8d12a438eb1fdfbbf
   end
 
   # GET /tweets/1
@@ -69,6 +73,10 @@ class TweetsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tweet_params
+<<<<<<< HEAD
       params.require(:tweet).permit(:status, :location)
+=======
+      params.require(:tweet).permit(:message, :location)
+>>>>>>> ba10669983245f8554675fa8d12a438eb1fdfbbf
     end
 end

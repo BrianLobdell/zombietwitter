@@ -1,9 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   status: MyString
   location: MyString
 
 two:
   status: MyString
+=======
+  message: MyString
+  location: MyString
+
+two:
+  message: MyString
+>>>>>>> ba10669983245f8554675fa8d12a438eb1fdfbbf
   location: MyString
